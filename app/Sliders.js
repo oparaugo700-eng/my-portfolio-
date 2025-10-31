@@ -27,9 +27,7 @@ export default function Sliders() {
                     <div className="flex justify-center">
                         <img
                             src="/Screenshot 2025-10-23 000653.png"
-                            width={400}
-                            height={500}
-                            alt='1'
+                            alt='page 1'
                         />
                     </div>
 
@@ -38,9 +36,7 @@ export default function Sliders() {
                     <div className="flex justify-center">
                         <img
                             src="/Screenshot 2025-10-23 000733.png"
-                            width={400}
-                            height={500}
-                            alt='1'
+                            alt='page 2'
                         />
                     </div>
 
@@ -49,9 +45,7 @@ export default function Sliders() {
                     <div className="flex justify-center">
                         <img
                             src="/Screenshot 2025-10-23 000930.png"
-                            width={400}
-                            height={500}
-                            alt='1'
+                            alt='page 3'
 
                         />
                     </div>
@@ -62,9 +56,7 @@ export default function Sliders() {
                     <div className="flex justify-center">
                         <img
                             src="/Screenshot 2025-10-23 001007.png"
-                            width={400}
-                            height={500}
-                            alt='1'
+                            alt='page 4'
 
                         />
                     </div>

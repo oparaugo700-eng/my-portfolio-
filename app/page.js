@@ -1,103 +1,69 @@
-import Image from "next/image";
+"use client"
+import { Button } from "@mui/material";
+import Link from "next/link";
+import Accordion from "./Accordion";
+import Progress from "./progress/Progress";
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  return (
+    <main className="" >
+
+      <header className="p-2.5 flex flex-col justify-center items-center sm:flex-row md:justify-evenly sm:gap-4 bg-gray-800 bg-[url('/wallpaper.jpg')] bg-cover bg-no-repeat  xl:h-[80vh] ">
+
+        <section className="order-last ml-1.5 md:order-first text-white text-shadow-2xs text-shadow-black ">
+          <p className="text-2xl font-medium md:font-bold lg:text-3xl ">Web Developer</p>
+          <p className="lg:text-2xl ">I am Kingsley Opara</p>
+          <p className="lg:text-2xl">I am a web developer from Nigeria, i live i Abuja.</p>
+          <p className="lg:text-2xl pb-3">I studied web development At Early Code LTD.</p>
+          <div className="mb-6 md:mb-0">
+            <Link href="https://wa.me/+2349160909422"><Button color="success" variant="contained" >Contact me</Button></Link>
+          </div>
+
+        </section>
+
+        <img
+          src="/website-9022660.png"
+          alt="profile-picture"
+          className="w-[200px] h-[200px]  md:w-[300px] mt-4 md:h-[300px] order-first mb-4 sm:order-last lg:mb-0 lg:w-[500px]  "
+        />
+      </header>
+      <section className="flex flex-col mt-[2em] mx-[1em] md:mx-[2em] sm:justify-center items-center md:flex-row gap-1 lg:gap-7">
+        <div>
+          <p className="text-center font-bold text-2xl md:text-3xl mb-2">About Me</p>
+          <p>I have always be curious about how the web works, and i love how other developers build a website, from the structure of the webiste to the designs the beautiful animations and transition and down to the interactions of the websites.</p>
+          <p>So i deceided to do some research on it and i learnt how it works and how to build one, so i deceided to take up the challange to learn how to build a website.</p>
+          <p>I am currently at the early stage of my journey in software engineering, i am passionate about it and i am committed to continous learning and applying technology to solve real-word problems.</p>
+          <p>I value precision, problem-solving, and attention to details skills that translate seamlessly into my work in technology.</p>
+          <p>I am passionate about lifelong learning, innovation and making an impact in the technology sectors.</p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        <img
+          src="/ai-generated-8329596.jpg"
+          width={3750}
+          height={3750}
+          className="w-[500px] lg:w-[200px] md:h-[400px] xl:w-[700px] xl:h-[600px]"
+        />
+
+      </section>
+
+
+      <div className="bg-stone-50 sm:w-[500px] md:w-[700px] sm:mx-auto  h-fit flex my-[80px] p-4 sm:p-[5em] text-black ">
+        <section className="w-[90vw] flex flex-col sm:w-[340px] md:w-[500px] ">
+          <li>Personal project</li>
+          <Accordion />
+        </section>
+      </div>
+
+      <section className=" sm:w-[500px] md:w-[700px] mx-auto mb-4">
+        <p className="text-2xl ">MY SKILL LEVEL</p>
+        <div className="bg-stone-200 flex flex-col items-center gap-1 pt-3 text-black">
+          <Progress />
+        </div>
+
+      </section>
+
+
+    </main>
   );
 }

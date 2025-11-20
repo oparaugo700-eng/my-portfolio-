@@ -14,7 +14,7 @@ export default function Home() {
         <section className="order-last ml-1.5 md:order-first text-white text-shadow-2xs text-shadow-black ">
           <p className="text-2xl font-medium md:font-bold lg:text-3xl ">Web Developer</p>
           <p className="lg:text-2xl ">I am Kingsley Opara</p>
-          <p className="lg:text-2xl">I am a web developer from Nigeria, i live i Abuja.</p>
+          <p className="lg:text-2xl">I am a web developer from Nigeria, I live in Abuja.</p>
           <p className="lg:text-2xl pb-3">I studied web development At Early Code LTD.</p>
           <div className="mb-6 md:mb-0">
             <Link href="https://wa.me/+2349160909422"><Button color="success" variant="contained" >Contact me</Button></Link>

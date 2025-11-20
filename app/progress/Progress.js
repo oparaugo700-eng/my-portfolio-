@@ -13,7 +13,7 @@ export default function Progress() {
                 <p>TAILWIND CSS</p>
                 <LinearProgress variant='determinate' value={75} />
                 <p>JAVASCRIPT</p>
-                <LinearProgress variant='determinate' value={50} />
+                <LinearProgress variant='determinate' value={56} />
                 <p>REACT JS</p>
                 <LinearProgress variant='determinate' value={40} />
                 <p>NEXT JS</p>

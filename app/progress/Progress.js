@@ -15,9 +15,9 @@ export default function Progress() {
                 <p>JAVASCRIPT</p>
                 <LinearProgress variant='determinate' value={56} />
                 <p>REACT JS</p>
-                <LinearProgress variant='determinate' value={40} />
+                <LinearProgress variant='determinate' value={43} />
                 <p>NEXT JS</p>
-                <LinearProgress variant='determinate' value={40} />
+                <LinearProgress variant='determinate' value={42} />
             </Stack>
         </main>
     )
